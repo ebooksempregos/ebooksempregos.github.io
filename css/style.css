@@ -2191,7 +2191,6 @@ input[type="submit"].form-control:focus {
 }
 
 .banner-parallax .row {
-  display: flex;
   align-items: center;
 }
 
