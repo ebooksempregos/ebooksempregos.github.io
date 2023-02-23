@@ -539,7 +539,7 @@ abbr {
 label {
   vertical-align: top;
   margin-bottom: 0;
-  color: #222;
+  color: #727272;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 12px;
@@ -2488,7 +2488,7 @@ body::after {
   cursor: pointer;
   text-align: left;
   font-family: "Outfit", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   color: #777;
 }
 
@@ -4241,7 +4241,10 @@ html.scroll-lock .popup-preview {
 
 
 
-
+.box-empresa {
+  width: 100%;
+  color: #1bc768;
+}
 
 /* Footer Bar 1 */
 
