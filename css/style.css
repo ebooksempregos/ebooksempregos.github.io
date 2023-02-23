@@ -48,6 +48,12 @@
  *    |-->  [ 10 ] - Form Settings
  *
  */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
 /*  [ 01 ] - Small Reset
 =========================== */
 body,
@@ -76,17 +82,18 @@ fieldset {
 body {
   width: 100%;
   position: relative;
-  font: 14px/1.7 "Open Sans", sans-serif;
+  font: 14px/1.7;
+  font-family: "Outfit", sans-serif;
   background: #fff;
   color: #999;
 }
 
 .font-heading-primary {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .font-heading-secondary {
-  font-family: "Playfair Display", "Droid Arabic Kufi", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 #full-container {
@@ -254,7 +261,7 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
   line-height: 1.3;
   color: #222;
@@ -435,7 +442,7 @@ strong {
 ============================ */
 form {
   position: relative;
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Outfit", sans-serif !important;
 }
 
 form [class*="col-"]:last-child .form-group:last-child {
@@ -572,7 +579,7 @@ input[type="submit"].form-control {
   position: relative;
   border: none;
   color: #fff;
-  background-color: #44bfff;
+  background-color: #FF981F;
   border-radius: 2px;
   transition: all 0.2s;
   width: auto;
@@ -584,7 +591,7 @@ input[type="submit"].form-control {
 
 input[type="submit"]:hover,
 input[type="submit"].form-control:hover {
-  background-color: #1bb1ff;
+  background-color: #FF981F;
 }
 
 input[type="submit"]:focus,
@@ -1485,7 +1492,7 @@ input[type="submit"].form-control:focus {
   letter-spacing: 0.3px;
   text-align: center;
   border: 2px solid;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
   transition: color 0.2s, background 0.2s, border-color 0.2s;
   /* Sizes */
   /* Styles */
@@ -2468,14 +2475,7 @@ body::after {
   font-size: 14px;
 }
 
-.box-form .box-title::after {
-  content: "";
-  display: inline-block;
-  margin: 25px auto 0;
-  width: 30px;
-  height: 1px;
-  background: #fff;
-}
+
 
 .box-form .box-content {
   overflow: hidden;
@@ -2487,7 +2487,7 @@ body::after {
   margin-bottom: 5px;
   cursor: pointer;
   text-align: left;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 13px;
   color: #777;
 }
@@ -2499,7 +2499,7 @@ body::after {
 /* CTA Subscribe */
 .cta-subscribe {
   position: relative;
-  top: 50px;
+  top: 10px;
   margin: auto;
   border-radius: 10px;
   box-shadow: 0 0 45px 10px rgba(34, 34, 34, 0.08);
@@ -2519,11 +2519,13 @@ body::after {
   border-radius: 10px 10px 0 0;
   color: #999;
   background: url(../images/general-elements/bg-cta-subscribe-title.png) no-repeat center top;
-  background-color: #390a98;
+  background-color: #FF981F;
 }
 
 .cta-subscribe .box-title .title {
   margin-bottom: 8px;
+  font-size: 18px;
+
 }
 
 .cta-subscribe .box-title.text-white {
@@ -2542,7 +2544,7 @@ body::after {
   overflow: initial;
   display: block;
   margin-top: 50px;
-  padding: 0 40px 0;
+  padding: 0 40px 50px;
 }
 
 .cta-subscribe form .form-group {
@@ -2585,6 +2587,7 @@ body::after {
   padding-left: 40px;
   padding-right: 40px;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .cta-subscribe form textarea {
@@ -3644,7 +3647,7 @@ html.scroll-lock .popup-preview {
   line-height: 16px;
   font-size: 9px;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
   border-radius: 2px;
   color: #fff;
@@ -4222,10 +4225,7 @@ html.scroll-lock .popup-preview {
  */
 /*  [ 01 ] - Footer
 ===================== */
-#footer {
-  overflow: hidden;
-  position: relative;
-}
+#footer {}
 
 /*  [ 02 ] - Footer Bars
 ========================== */
@@ -4239,23 +4239,12 @@ html.scroll-lock .popup-preview {
   border-top: 1px solid rgba(34, 34, 34, 0.05);
 }
 
-.footer-bar .fb-row+.fb-row {
-  padding-top: 50px;
-  margin-top: 50px;
-  border-top: 1px solid rgba(34, 34, 34, 0.05);
-}
 
-@media (max-width: 768px) {
-  .footer-bar .fb-row {
-    flex-direction: column;
-  }
-}
+
+
 
 /* Footer Bar 1 */
-#footer-bar-1 {
-  padding: 210px 0 80px;
-  background: #ecf9ff url(../images/general-elements/footer-bg-waves.png) no-repeat center top;
-}
+
 
 #footer-bar-1 .logo-footer {
   margin-bottom: 35px;
@@ -4435,11 +4424,11 @@ html.scroll-lock .popup-preview {
 
 .color-bg-gradient,
 .icon.spaced.gradient-bg {
-  background-color: #fa9332;
-  background-image: -webkit-linear-gradient(45deg, #f92 0%, #ffa743 100%);
-  background-image: -moz-linear-gradient(45deg, #f92 0%, #ffa743 100%);
-  background-image: -o-linear-gradient(45deg, #f92 0%, #ffa743 100%);
-  background-image: linear-gradient(45deg, #f92 0%, #ffa743 100%);
+  background-color: #6E29FF;
+  background-image: -webkit-linear-gradient(45deg, #6E29FF 0%, #6E29FF 100%);
+  background-image: -moz-linear-gradient(45deg, #6E29FF 0%, #6E29FF 100%);
+  background-image: -o-linear-gradient(45deg, #6E29FF 0%, #6E29FF 100%);
+  background-image: linear-gradient(45deg, #6E29FF 0%, #6E29FF 100%);
 }
 
 .color-border-gradient {
@@ -6552,7 +6541,7 @@ html.scroll-lock .popup-preview {
   text-align: center;
   background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  font-family: "Open Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
   position: fixed;
   right: 0;
   top: 0;
