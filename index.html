@@ -35,7 +35,7 @@
 	<script src='https://www.google.com/recaptcha/api.js'></script> 
 	   <script>
     window.onload = function() {
-    var recaptcha = document.forms["my-form"]["g-recaptcha-response"];
+    var recaptcha = document.forms["my-form"]["g-recaptcha"];
     recaptcha.required = true;
     recaptcha.oninvalid = function(e) {
     // fazer algo, no caso to dando um alert
