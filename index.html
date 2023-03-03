@@ -300,7 +300,7 @@
 		<script
 			type="text/javascript"> window.addEventListener("DOMContentLoaded", function () { const yourForm = document.getElementById('my-form'); yourForm.addEventListener("submit", function (e) { e.preventDefault(); const data = new FormData(yourForm); const action = e.target.action; fetch(action, { method: 'POST', body: data, }).then(() => { window.location.replace('https://drive.google.com/uc?export=download&id=1WlyCZ38euHn5kqUIun27u8aHkOFQVBlZ') }) }) }); </script>
 				<script>
-$('form').on('submit', function(e) {
+$('my-form').on('submit', function(e) {
 if(grecaptcha.getResponse() == "") {
 e.preventDefault();
 alert("You can't proceed!");
