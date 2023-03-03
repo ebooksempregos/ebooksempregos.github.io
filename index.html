@@ -33,6 +33,16 @@
 	============================================= -->
 	<title>[EBOOK] Mulheres no mercado de trabalho: Onde nasce a desigualdade?</title>
 	<script src='https://www.google.com/recaptcha/api.js'></script> 
+	   <script>
+    window.onload = function() {
+    var recaptcha = document.forms["my-form"]["g-recaptcha-response"];
+    recaptcha.required = true;
+    recaptcha.oninvalid = function(e) {
+    // fazer algo, no caso to dando um alert
+    alert("Por favor complete o captchaba");
+      }
+   }
+   </script>
 
 
 </head>
@@ -299,16 +309,7 @@
 		<script src='js/functions.js'></script>
 		<script
 			type="text/javascript"> window.addEventListener("DOMContentLoaded", function () { const yourForm = document.getElementById('my-form'); yourForm.addEventListener("submit", function (e) { e.preventDefault(); const data = new FormData(yourForm); const action = e.target.action; fetch(action, { method: 'POST', body: data, }).then(() => { window.location.replace('https://drive.google.com/uc?export=download&id=1WlyCZ38euHn5kqUIun27u8aHkOFQVBlZ') }) }) }); </script>
-				<script>
-$('my-form').on('submit', function(e) {
-if(grecaptcha.getResponse() == "") {
-e.preventDefault();
-alert("You can't proceed!");
-} else {
-alert("Thank you");
-}
-});
-</script>
+				
 
 </body>
 
