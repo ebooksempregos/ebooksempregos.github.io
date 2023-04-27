@@ -4412,9 +4412,9 @@ html.scroll-lock .popup-preview {
 .icon.spaced.gradient-bg {
   background-color: #6e29ff;
   background-image: -webkit-linear-gradient(45deg, #2196F3 0%, #e16262 100%);
-  background-image: -moz-linear-gradient(45deg, #ff1010 0%, #e16262 100%);
-  background-image: -o-linear-gradient(45deg, #ff1010 0%, #e16262 100%);
-  background-color: linear-gradient(45deg, #ff1010 0%, #e16262 100%);
+  background-image: -moz-linear-gradient (45deg, #2196F3 0%, #e16262 100%);
+  background-image: -o-linear-gradient(45deg, #2196F3 0%, #e16262 100%);
+  background-color: linear-gradient(45deg, #2196F3 0%, #e16262 100%);
 }
 
 .color-border-gradient {
