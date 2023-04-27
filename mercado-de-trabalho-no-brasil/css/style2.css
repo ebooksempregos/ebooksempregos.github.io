@@ -4411,10 +4411,7 @@ html.scroll-lock .popup-preview {
 .color-bg-gradient,
  .icon.spaced.gradient-bg {
    background-color: #ff981f !important;
-   background-image: -webkit-linear-gradient(45deg, #ff981f 0%, #5daf19 100%) !important;
-   background-image: -moz-linear-gradient(45deg, #ff981f 0%, #5daf19 100%) !important;
-   background-image: -o-linear-gradient(45deg, #2196f3 0%, #5daf19 100%) !important;
-   background-color: linear-gradient(45deg, #2196f3 0%, #5daf19 100%) !important;
+  
  }
 
 .color-border-gradient {
